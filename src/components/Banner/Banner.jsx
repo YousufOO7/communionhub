@@ -2,8 +2,8 @@ import { motion } from "motion/react"
 motion
 const Banner = () => {
     return (
-        <div className="hero bg-base-200 min-h-96">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero bg-base-200 min-h-96 ">
+            <div className="hero-content flex-col max-w-6xl mx-auto lg:flex-row-reverse">
                 <div className='flex-1'>
                     <motion.img
                         animate={{ y: [0, 40, 0] }}
