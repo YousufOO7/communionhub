@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
+import { Link } from 'react-router';
 
 const Events = () => {
     const [events, setEvents] = React.useState([]);
@@ -34,6 +35,10 @@ const Events = () => {
                         {category}
                     </button>
                 ))}
+            </div>
+
+            <div>
+                <Link to="/addEvent"><button className='btn bg-blue-500 text-white hover:bg-black transition duration-700 easeInOut'>Add New Event</button></Link>
             </div>
 
             {/* Events Grid */}
