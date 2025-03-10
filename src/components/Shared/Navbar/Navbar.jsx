@@ -5,7 +5,7 @@ const Navbar = () => {
 
     const Links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><a>Event List</a></li>
+        <li><NavLink to="events">Event List</NavLink></li>
         <li><NavLink to="about">About Us</NavLink></li>
     </>
 
@@ -25,7 +25,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a href="#" className="px-8 py-2 text-[#1E65F2] text-2xl">CommunionHub</a>
+                    <a href="#" className="px-8 py-2 text-[#1E65F2] text-2xl text-bold">CommunionHub</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

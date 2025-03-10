@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import { Link } from "react-router";
 motion
 const Banner = () => {
     return (
@@ -25,16 +26,16 @@ const Banner = () => {
                         transition={{ duration: 5, delay: 1, ease: "easeInOut", repeat: Infinity }}
                         className="text-5xl font-bold mb-2"
                     >
-                        community <motion.span
+                        Across Faiths <motion.span
                             animate={{ color: ['#f3411b', '#f3731b', '#f3981b'] }}
                             transition={{ duration: 1, repeat: Infinity }}
                         ></motion.span>
-                        Support"
+                        & Interests"
                     </motion.h1>
                     <p className="py-6">
-                    Join us to be part of a community where spirituality meets innovation. Together, we'll build a world that's more inclusive, engaging, and connected than ever before!
+                        The Communion App is a platform designed to connect people of all faiths through meaningful events and community support. Whether you’re looking for religious gatherings, spiritual discussions, or charitable activities, the app helps you discover and participate in events that align with your beliefs. With an intuitive interface and seamless navigation, Communion App fosters inclusivity, connection, and engagement within diverse faith-based communities.
                     </p>
-                    <button className="px-8 py-2  bg-black text-white rounded-full hover:bg-[#1E65F2] transition duration-700 easeInOut">Get Started</button>
+                        <button className="px-8 py-2  bg-black text-white rounded-full hover:bg-[#1E65F2] transition duration-700 easeInOut"><Link to="/events"> Explore Events </Link></button>
                 </div>
             </div>
         </div>
