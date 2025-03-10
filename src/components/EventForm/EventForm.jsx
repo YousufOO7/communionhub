@@ -21,7 +21,7 @@ const EventForm = () => {
         }
 
         try {
-            const res = await axios.post("http://localhost:3000/addEvent", eventDataObj);
+            const res = await axios.post("https://communion-hub-server.vercel.app/addEvent", eventDataObj);
         
             if (res.status === 200) {
                 Swal.fire({

@@ -11,7 +11,7 @@ const Events = () => {
     const [selectedCategory, setSelectedCategory] = React.useState("All");
 
     React.useEffect(() => {
-        axios.get("http://localhost:3000/events")
+        axios.get("https://communion-hub-server.vercel.app/events")
             .then(res => setEvents(res.data))
             .catch(error => console.error("Error fetching events:", error));
     }, []);
